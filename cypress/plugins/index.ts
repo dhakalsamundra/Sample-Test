@@ -11,7 +11,8 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
-import * as fs from "fs";
+import "dotenv/config";
+
 
 const pluginConfig: Cypress.PluginConfig = (on, config) => {
   // `on` is used to hook into various events Cypress emits
@@ -23,6 +24,7 @@ const pluginConfig: Cypress.PluginConfig = (on, config) => {
   on("task", {
   });
   config.baseUrl = config.env.BASE_URL;
+  config.env.CYPRESS_TESTRAIL_REPORTER_PASSWORD = process.env.CYPRESS_TESTRAIL_REPORTER_PASSWORD
   return config;
 };
 
