@@ -1,0 +1,21 @@
+{
+  "pluginsFile": "cypress/plugins/index.ts",
+  "supportFile": "cypress/support/index.ts",
+  "testFiles": "**/*.spec.ts",
+  "viewportWidth": 1280,
+  "viewportHeight": 720,
+  "watchForFileChanges": false,
+  "ignoreTestFiles": [
+    "**/manage_add_bank.spec.ts",
+    "**/manage_add_paypal.spec.ts"
+  ],
+  "reporter": "autoset-status-cypress-testrail-reporter",
+  "reporterOptions": {
+    "host": "https://samundra.testrail.io",
+    "username": "dhakalsamundra35@gmail.com",
+    "password": "t.tijoiregnvknes-vdsnfkdsjeofsdf kj",
+      "projectId": "1",
+      "runId": "2"
+  },
+  "chromeWebSecurity": false
+}

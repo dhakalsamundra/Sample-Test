@@ -1,0 +1,14 @@
+{
+  /* Visit https://www.typescriptlang.org/v2/tsconfig to read more about this file */
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["dom","es6"],
+    "strict": true, 
+    "types": ["cypress", "cypress-wait-until", "@testing-library/cypress", "@types/node"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true
+  }
+}
